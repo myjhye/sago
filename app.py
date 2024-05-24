@@ -46,7 +46,7 @@ def is_flirting_with_min_yong(question):
 def generate_min_yong_response(question):
     # 민용적 사고 스타일의 답변을 생성하는 프롬프트 설정
     messages = [
-        {"role": "system", "content": "당신은 민용입니다. 냉소적이고 직설적인 답변으로 유명한 사람입니다."},
+        {"role": "system", "content": "You are a character named Min Yong, known for your cynical and straightforward responses. Respond to the following question in Min Yong's style, making sure to be extra cynical."},
         {"role": "user", "content": f"Question: {question}\nResponse:"}
     ]
     
