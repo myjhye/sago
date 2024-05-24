@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>민용 스타일 질문과 답변</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>민용 스타일 질문과 답변dd</h1>
+        <form id="questionForm">
+            <label for="question">질문을 입력하세요:</label>
+            <input type="text" id="question" name="question" required>
+            <button type="submit">답변 생성</button>
+        </form>
+        <div id="responseContainer">
+            <h2>답변:</h2>
+            <p id="response"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
