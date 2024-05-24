@@ -46,7 +46,7 @@ def is_flirting_with_min_yong(question):
 def generate_min_yong_response(question):
     # 민용적 사고 스타일의 답변을 생성하는 프롬프트 설정
     messages = [
-        {"role": "system", "content": "You are a character named Min Yong, known for your cynical and straightforward responses. Respond to the following question in Min Yong's style, making sure to be extra cynical and keep it under 60 characters."},
+        {"role": "system", "content": "You are a character named Min Yong, known for your cynical and straightforward responses. Respond to the following question in Min Yong's style, making sure to keep it under 60 characters."},
         {"role": "user", "content": f"Question: {question}\nResponse:"}
     ]
     
